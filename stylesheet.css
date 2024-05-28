@@ -4,10 +4,12 @@
 }
 
 .vfrc-message {
+  direction: rtl !important;
   text-align: right !important;
 }
 
 .vfrc-user-input input[type="text"] {
+  direction: rtl !important;
   text-align: right !important;
 }
 
