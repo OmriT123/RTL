@@ -1,0 +1,19 @@
+/* rtl-styles.css */
+
+.vfrc-chat-container {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+.vfrc-message {
+  text-align: right !important;
+}
+
+.vfrc-user-input input[type="text"] {
+  text-align: right !important;
+}
+
+.vfrc-chat--dialog.c-Mmsau {
+  direction: rtl;
+  text-align: right !important;
+}
