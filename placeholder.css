@@ -1,0 +1,23 @@
+/* Custom CSS for Voiceflow Chat Widget */
+
+/* Customize the input field */
+.vfrc-input::placeholder {
+  /* Your styles here */
+  font-family: Arial, sans-serif; /* Example: Change font family */
+  color: #999; /* Example: Change placeholder text color */
+}
+
+/* Custom placeholder text in Hebrew */
+.vfrc-input::placeholder {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-family: Arial, sans-serif; /* Ensure Hebrew-compatible font */
+  content: "תשאלי כל דבר"; /* Set the placeholder text in Hebrew */
+}
+
+/* Example: Styling the chat input button */
+.vfrc-chat-input--button {
+  /* Your styles here */
+  background-color: #007bff; /* Example: Change button background color */
+  color: #fff; /* Example: Change button text color */
+}
