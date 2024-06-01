@@ -1,19 +1,21 @@
-.vfrc-chat--dialog {
-  direction: rtl !important;
-  text-align: right !important;
-}
-
-.vfrc-message {
-  direction: rtl !important;
-  text-align: right !important;
-}
-
-.vfrc-user-input input[type="text"] {
-  direction: rtl !important;
-  text-align: right !important;
-}
-
-.vfrc-chat-container {
-  direction: rtl !important;
-  text-align: right !important;
-}
+ .vfrc-chat--dialog {
+            direction: rtl !important;
+            text-align: right !important;
+          }
+          .vfrc-message {
+            direction: rtl !important;
+            text-align: right !important;
+          }
+          .vfrc-user-response .vfrc-message {
+            direction: rtl !important;
+            text-align: right !important;
+          }
+          .vfrc-input input[type="text"] {
+            direction: rtl !important;
+            text-align: right !important;
+          }
+          .vfrc-input input[type="text"]::placeholder {
+            direction: rtl !important;
+            text-align: right !important;
+            content: 'תשאלי כל דבר';
+          }
