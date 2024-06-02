@@ -26,21 +26,21 @@
 /* Placeholder in Hebrew */
 .vfrc-chat-input textarea::placeholder {
     text-align: right !important;
-    placeholder: "תשאלי כל דבר" !important;
+    content: "תשאלי כל דבר"; /* Change placeholder text */
 }
 
 /* Add watermark in the footer */
 .vfrc-footer--watermark {
-    text-align: center !important;
+    text-align: center !important; /* Centering for the parent element */
     font-size: 12px;
     color: #999; /* Adjust color as needed */
     direction: rtl !important;
-    text-align: right !important;
+    text-align: right !important; /* Align text to right within the footer */
 }
 .vfrc-footer--watermark::before {
-    content: " Talomri AI" !important;
+    content: ""; /* Remove Assistant ⚡️ by text */
     display: block;
-    color: inherit;
+    color: inherit; /* Inherit color from parent */
 }
 .vfrc-footer--watermark a {
     display: none !important; /* Hide the Voiceflow link */
@@ -48,5 +48,5 @@
 
 /* Hide session time */
 .vfrc-chat--session-time {
-    display: none !important;
+    display: none !important; /* Hide the session time element */
 }
