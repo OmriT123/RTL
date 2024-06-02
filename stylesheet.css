@@ -1,21 +1,37 @@
- .vfrc-chat--dialog {
-            direction: rtl !important;
-            text-align: right !important;
-          }
-          .vfrc-message {
-            direction: rtl !important;
-            text-align: right !important;
-          }
-          .vfrc-user-response .vfrc-message {
-            direction: rtl !important;
-            text-align: right !important;
-          }
-          .vfrc-input input[type="text"] {
-            direction: rtl !important;
-            text-align: right !important;
-          }
-          .vfrc-input input[type="text"]::placeholder {
-            direction: rtl !important;
-            text-align: right !important;
-            content: 'תשאלי כל דבר';
-          }
+/* Set the chat widget to RTL */
+.vfrc-chat--dialog {
+    direction: rtl !important;
+    text-align: right !important;
+}
+.vfrc-message {
+    direction: rtl !important;
+    text-align: right !important;
+}
+.vfrc-user-response .vfrc-message {
+    direction: rtl !important;
+    text-align: right !important;
+}
+.vfrc-input input[type="text"] {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Change placeholder text in the input box to Hebrew and set to RTL */
+.vfrc-input input[type="text"]::placeholder {
+    content: "הודעה...";
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Add watermark in the footer */
+.vfrc-footer--watermark {
+    text-align: center !important;
+    font-size: 12px;
+    color: #999; /* Adjust color as needed */
+    direction: rtl !important;
+    text-align: right !important;
+}
+.vfrc-footer--watermark::before {
+    content: "Assistant ⚡️ by Talomri AI";
+    display: block;
+}
