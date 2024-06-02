@@ -38,13 +38,12 @@
     text-align: right !important;
 }
 .vfrc-footer--watermark::before {
-    content: "Assistant ⚡️ by Talomri AI" !important;
+    content: "Talomri AI" !important;
     display: block;
     color: inherit;
 }
 .vfrc-footer--watermark a {
     display: none !important; /* Hide the Voiceflow link */
-    display: block !important;
 }
 
 /* Hide session time */
