@@ -26,21 +26,20 @@
 /* Placeholder in Hebrew */
 .vfrc-chat-input textarea::placeholder {
     text-align: right !important;
-    content: "תשאלי כל דבר" !important; /* Change placeholder text */
+    content: "תשאלי כל דבר"; /* Updated placeholder text */
 }
 
-/* Add watermark in the footer */
+/* Customize watermark in the footer */
 .vfrc-footer--watermark {
-    text-align: center !important; /* Centering for the parent element */
+    text-align: right !important; /* Align text to right within the footer */
     font-size: 12px;
     color: #999; /* Adjust color as needed */
-    direction: rtl !important;
-    text-align: right !important; /* Align text to right within the footer */
 }
 .vfrc-footer--watermark::before {
-    content: "" !important; /* Remove Assistant ⚡️ by text */
-    display: block;
+    content: " Assistant ⚡️ by Talomri AI"; /* Custom watermark text */
+    display: inline-block; /* Display inline to avoid line break */
     color: inherit; /* Inherit color from parent */
+    margin-right: 5px; /* Adjust spacing if needed */
 }
 .vfrc-footer--watermark a {
     display: none !important; /* Hide the Voiceflow link */
