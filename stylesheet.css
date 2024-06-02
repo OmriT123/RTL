@@ -45,20 +45,7 @@
     display: none !important; /* Hide the Voiceflow link */
 }
 
-/* Change session time to Hebrew */
+/* Hide session time */
 .vfrc-chat--session-time {
-    direction: rtl !important;
-    text-align: right !important;
-}
-.vfrc-chat--session-time::after {
-    content: " ימים לפני";
-    display: inline;
-    direction: rtl !important;
-    text-align: right !important;
-}
-
-/* Keep the original content visible */
-.vfrc-chat--session-time {
-    display: inline !important;
-    visibility: visible !important;
+    display: none !important;
 }
