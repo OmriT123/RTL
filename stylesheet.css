@@ -26,6 +26,7 @@
 /* Placeholder in Hebrew */
 .vfrc-chat-input textarea::placeholder {
     text-align: right !important;
+    content: "תשאלי כל דבר" !important;
 }
 
 /* Add watermark in the footer */
@@ -37,12 +38,13 @@
     text-align: right !important;
 }
 .vfrc-footer--watermark::before {
-    content: "Assistant ⚡️ by Talomri AI";
+    content: "Assistant ⚡️ by Talomri AI" !important;
     display: block;
     color: inherit;
 }
 .vfrc-footer--watermark a {
     display: none !important; /* Hide the Voiceflow link */
+    display: block !important;
 }
 
 /* Hide session time */
