@@ -17,19 +17,15 @@
     text-align: right !important;
 }
 
-/* Change placeholder text in the input box to Hebrew and set to RTL */
-.vfrc-input input[type="text"]::placeholder,
-.vfrc-input textarea::placeholder {
-    content: "הודעה...";
+/* Ensure text box is RTL */
+.vfrc-chat-input textarea {
     direction: rtl !important;
     text-align: right !important;
 }
-.vfrc-input textarea {
-    direction: rtl !important;
+
+/* Placeholder in Hebrew */
+.vfrc-chat-input textarea::placeholder {
     text-align: right !important;
-}
-.vfrc-input textarea::placeholder {
-    content: "הודעה...";
 }
 
 /* Add watermark in the footer */
@@ -40,9 +36,10 @@
     direction: rtl !important;
     text-align: right !important;
 }
-.vfrc-footer--watermark::after {
+.vfrc-footer--watermark::before {
     content: "Assistant ⚡️ by Talomri AI";
     display: block;
+    color: inherit;
 }
 .vfrc-footer--watermark a {
     display: none !important; /* Hide the Voiceflow link */
@@ -53,26 +50,15 @@
     direction: rtl !important;
     text-align: right !important;
 }
-.vfrc-chat--session-time::before {
-    content: attr(data-time) " ימים לפני";
+.vfrc-chat--session-time::after {
+    content: " ימים לפני";
     display: inline;
     direction: rtl !important;
     text-align: right !important;
 }
 
-/* Remove default content for session time */
+/* Keep the original content visible */
 .vfrc-chat--session-time {
-    display: none;
-}
-
-/* Specific styling for the placeholder text box */
-#vf-chat-input--clwx9zk4r00003b6b5t2v4el3::placeholder {
-    content: "הודעה...";
-    direction: rtl !important;
-    text-align: right !important;
-}
-
-/* Remove the Voiceflow watermark */
-.vfrc-footer--watermark {
-    display: none !important;
+    display: inline !important;
+    visibility: visible !important;
 }
