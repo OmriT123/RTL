@@ -26,7 +26,7 @@
 /* Placeholder in Hebrew */
 .vfrc-chat-input textarea::placeholder {
     text-align: right !important;
-    content: "תשאלי כל דבר"; /* Change placeholder text */
+    content: "תשאלי כל דבר" !important; /* Change placeholder text */
 }
 
 /* Add watermark in the footer */
@@ -38,7 +38,7 @@
     text-align: right !important; /* Align text to right within the footer */
 }
 .vfrc-footer--watermark::before {
-    content: ""; /* Remove Assistant ⚡️ by text */
+    content: "" !important; /* Remove Assistant ⚡️ by text */
     display: block;
     color: inherit; /* Inherit color from parent */
 }
