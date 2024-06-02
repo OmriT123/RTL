@@ -64,3 +64,15 @@
 .vfrc-chat--session-time {
     display: none;
 }
+
+/* Specific styling for the placeholder text box */
+#vf-chat-input--clwx9zk4r00003b6b5t2v4el3::placeholder {
+    content: "הודעה...";
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Remove the Voiceflow watermark */
+.vfrc-footer--watermark {
+    display: none !important;
+}
