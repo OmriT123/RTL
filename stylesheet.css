@@ -26,6 +26,7 @@
 /* Placeholder in Hebrew */
 .vfrc-chat-input textarea::placeholder {
     text-align: right !important;
+    direction: rtl !important;
 }
 
 /* Adjust watermark in the footer */
