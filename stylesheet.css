@@ -25,7 +25,11 @@
     text-align: right !important;
 }
 .vfrc-input textarea {
-    placeholder: "הודעה...";
+    direction: rtl !important;
+    text-align: right !important;
+}
+.vfrc-input textarea::placeholder {
+    content: "הודעה...";
 }
 
 /* Add watermark in the footer */
@@ -36,7 +40,7 @@
     direction: rtl !important;
     text-align: right !important;
 }
-.vfrc-footer--watermark::before {
+.vfrc-footer--watermark::after {
     content: "Assistant ⚡️ by Talomri AI";
     display: block;
 }
@@ -50,8 +54,13 @@
     text-align: right !important;
 }
 .vfrc-chat--session-time::before {
-    content: "לפני " attr(data-time) " ימים"; /* Example: "לפני 6 ימים" */
-    display: block;
+    content: attr(data-time) " ימים לפני";
+    display: inline;
     direction: rtl !important;
     text-align: right !important;
+}
+
+/* Remove default content for session time */
+.vfrc-chat--session-time {
+    display: none;
 }
