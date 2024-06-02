@@ -26,7 +26,7 @@
 /* Placeholder in Hebrew */
 .vfrc-chat-input textarea::placeholder {
     text-align: right !important;
-    content: "תשאלי כל דבר" !important;
+    placeholder: "תשאלי כל דבר" !important;
 }
 
 /* Add watermark in the footer */
@@ -38,7 +38,7 @@
     text-align: right !important;
 }
 .vfrc-footer--watermark::before {
-    content: "Talomri AI" !important;
+    content: " Talomri AI" !important;
     display: block;
     color: inherit;
 }
