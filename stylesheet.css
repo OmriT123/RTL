@@ -36,7 +36,7 @@
     color: #999; /* Adjust color as needed */
 }
 .vfrc-footer--watermark::before {
-    content: " Assistant ⚡️ by Talomri AI"; /* Custom watermark text */
+    content: "Assistant ⚡️ by Talomri AI"; /* Custom watermark text */
     display: inline-block; /* Display inline to avoid line break */
     color: inherit; /* Inherit color from parent */
     margin-right: 5px; /* Adjust spacing if needed */
