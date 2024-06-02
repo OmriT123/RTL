@@ -28,21 +28,13 @@
     text-align: right !important;
 }
 
-/* Add watermark in the footer */
+/* Adjust watermark in the footer */
 .vfrc-footer--watermark {
     text-align: center !important;
     font-size: 12px;
     color: #999; /* Adjust color as needed */
     direction: rtl !important;
     text-align: right !important;
-}
-.vfrc-footer--watermark::before {
-    content: "Assistant ⚡️ by Talomri AI";
-    display: block;
-    color: inherit;
-}
-.vfrc-footer--watermark a {
-    display: none !important; /* Hide the Voiceflow link */
 }
 
 /* Hide session time */
