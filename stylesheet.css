@@ -11,16 +11,21 @@
     direction: rtl !important;
     text-align: right !important;
 }
-.vfrc-input input[type="text"] {
+.vfrc-input input[type="text"],
+.vfrc-input textarea {
     direction: rtl !important;
     text-align: right !important;
 }
 
 /* Change placeholder text in the input box to Hebrew and set to RTL */
-.vfrc-input input[type="text"]::placeholder {
+.vfrc-input input[type="text"]::placeholder,
+.vfrc-input textarea::placeholder {
     content: "הודעה...";
     direction: rtl !important;
     text-align: right !important;
+}
+.vfrc-input textarea {
+    placeholder: "הודעה...";
 }
 
 /* Add watermark in the footer */
@@ -34,4 +39,19 @@
 .vfrc-footer--watermark::before {
     content: "Assistant ⚡️ by Talomri AI";
     display: block;
+}
+.vfrc-footer--watermark a {
+    display: none !important; /* Hide the Voiceflow link */
+}
+
+/* Change session time to Hebrew */
+.vfrc-chat--session-time {
+    direction: rtl !important;
+    text-align: right !important;
+}
+.vfrc-chat--session-time::before {
+    content: "לפני " attr(data-time) " ימים"; /* Example: "לפני 6 ימים" */
+    display: block;
+    direction: rtl !important;
+    text-align: right !important;
 }
