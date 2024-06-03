@@ -23,33 +23,16 @@
     text-align: right !important;
 }
 
-/* Placeholder in Hebrew */
-.vfrc-chat-input textarea::placeholder {
-    text-align: right !important;
-}
-
 /* Customize watermark in the footer */
 .vfrc-footer--watermark {
-    text-align: right !important; /* Align text to right within the footer */
+    text-align: center !important; /* Center text within the footer */
     font-size: 12px;
     color: #999; /* Adjust color as needed */
 }
 .vfrc-footer--watermark::before {
-    content: " Assistant ⚡️ by Talomri AI"; /* Custom watermark text */
+    content: "Assistant ⚡️ by Talomri AI"; /* Custom watermark text */
     display: inline-block; /* Display inline to avoid line break */
     color: inherit; /* Inherit color from parent */
-}
-.vfrc-footer--watermark {
-    visibility: hidden; /* Hide original text */
-}
-.vfrc-footer--watermark::before {
-    visibility: visible; /* Show custom text */
-    display: inline-block; /* Display inline to avoid line break */
-}
-
-/* Hide the Voiceflow link completely */
-.vfrc-footer--watermark a {
-    display: none !important; /* Hide the Voiceflow link */
 }
 
 /* Hide session time */
